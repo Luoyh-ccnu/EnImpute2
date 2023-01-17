@@ -1,0 +1,265 @@
+% Encoding: UTF-8
+
+%alra
+@article {Linderman397588,
+	author = {Linderman, George C. and others},
+	title = {Zero-preserving imputation of scRNA-seq data using low-rank approximation},
+	year = {2018},
+	doi = {10.1101/397588},
+	journal = {bioRxiv}
+}
+
+%dca
+@Article{eraslan2018single,
+  author    = {Eraslan, G{\"o}kcen and others},
+  title     = {Single cell RNA-seq denoising using a deep count autoencoder},
+  journal   = {bioRxiv},
+  year      = {2018},
+  pages     = {300681},
+  publisher = {Cold Spring Harbor Laboratory},
+}
+%drimpute
+@Article{kwak2018drimpute,
+  author    = {Kwak, Il-Youp and others},
+  title     = {DrImpute: Imputing dropout events in single cell RNA sequencing data},
+  journal   = {BMC Bioinformatics},
+  year      = {2018},
+  volume    = {19},
+  pages     = {220},
+  publisher = {Cold Spring Harbor Laboratory},
+}
+%knnsmooth
+@Article{wagner2018k,
+  author    = {Wagner, Florian and others},
+  title     = {K-nearest neighbor smoothing for high-throughput single-cell RNA-Seq data},
+  journal   = {bioRxiv},
+  year      = {2018},
+  pages     = {217737},
+  publisher = {Cold Spring Harbor Laboratory},
+}
+%magic
+@Article{Dijk2018Recovering,
+  author  = {David van Dijk and others},
+  title   = {Recovering Gene Interactions from Single-Cell Data Using Data Diffusion},
+  journal = {Cell},
+  year    = {2018},
+  volume  = {174},
+  pages   = {1-14},
+}
+%saver
+@Article{Huang2018SAVER,
+  author  = {Mo Huang and others},
+  title   = {SAVER: gene expression recovery for single-cell RNA sequencing},
+  journal = {Nat Methods},
+  year    = {2018},
+  volume  = {15},
+  pages   = {539--542},
+}
+%scimpute
+@Article{Li2018an,
+  author  = {Wei Vivian Li and Jingyi Jessica Li},
+  title   = {An accurate and robust imputation method scImpute for single-cell RNA-seq data},
+  journal = {Nat Commun},
+  year    = {2018},
+  volume  = {9},
+  number  = {1},
+  pages   = {997},
+}
+%scnpf
+@article{ye2019scnpf,
+  title={scNPF: an integrative framework assisted by network propagation and network fusion for preprocessing of single-cell RNA-seq data},
+  author={Ye, Wenbin and Ji, Guoli and Ye, Pengchao and Long, Yuqi and Xiao, Xuesong and Li, Shuchao and Su, Yaru and Wu, Xiaohui},
+  journal={Bmc Genomics},
+  volume={20},
+  number={1},
+  pages={1--16},
+  year={2019},
+  publisher={BioMed Central}
+}
+%scrabble
+@article{peng2019scrabble,
+  title={SCRABBLE: single-cell RNA-seq imputation constrained by bulk RNA-seq data},
+  author={Peng, Tao and Zhu, Qin and Yin, Penghang and Tan, Kai},
+  journal={Genome biology},
+  volume={20},
+  number={1},
+  pages={1--12},
+  year={2019},
+  publisher={Springer}
+}
+%scrmd
+@article{10.1093/bioinformatics/btaa139,
+    author = {Chen, Chong and Wu, Changjing and Wu, Linjie and Wang, Xiaochen and Deng, Minghua and Xi, Ruibin},
+    title = "{scRMD: imputation for single cell RNA-seq data via robust matrix decomposition}",
+    journal = {Bioinformatics},
+    volume = {36},
+    number = {10},
+    pages = {3156-3161},
+    year = {2020},
+    month = {03},
+    abstract = "{Single cell RNA-sequencing (scRNA-seq) technology enables whole transcriptome profiling at single cell resolution and holds great promises in many biological and medical applications. Nevertheless, scRNA-seq often fails to capture expressed genes, leading to the prominent dropout problem. These dropouts cause many problems in down-stream analysis, such as significant increase of noises, power loss in differential expression analysis and obscuring of gene-to-gene or cell-to-cell relationship. Imputation of these dropout values can be beneficial in scRNA-seq data analysis.In this article, we model the dropout imputation problem as robust matrix decomposition. This model has minimal assumptions and allows us to develop a computational efficient imputation method called scRMD. Extensive data analysis shows that scRMD can accurately recover the dropout values and help to improve downstream analysis such as differential expression analysis and clustering analysis.The R package scRMD is available at https://github.com/XiDsLab/scRMD.Supplementary data are available at Bioinformatics online.}",
+    issn = {1367-4803},
+    doi = {10.1093/bioinformatics/btaa139},
+    url = {https://doi.org/10.1093/bioinformatics/btaa139},
+    eprint = {https://academic.oup.com/bioinformatics/article-pdf/36/10/3156/33204530/btaa139.pdf},
+}
+%sctssr
+@article{10.1093/bioinformatics/btaa108,
+    author = {Jin, Ke and Ou-Yang, Le and Zhao, Xing-Ming and Yan, Hong and Zhang, Xiao-Fei},
+    title = "{scTSSR: gene expression recovery for single-cell RNA sequencing using two-side sparse self-representation}",
+    journal = {Bioinformatics},
+    volume = {36},
+    number = {10},
+    pages = {3131-3138},
+    year = {2020},
+    month = {02},
+    abstract = "{Single-cell RNA sequencing (scRNA-seq) methods make it possible to reveal gene expression patterns at single-cell resolution. Due to technical defects, dropout events in scRNA-seq will add noise to the gene-cell expression matrix and hinder downstream analysis. Therefore, it is important for recovering the true gene expression levels before carrying out downstream analysis.In this article, we develop an imputation method, called scTSSR, to recover gene expression for scRNA-seq. Unlike most existing methods that impute dropout events by borrowing information across only genes or cells, scTSSR simultaneously leverages information from both similar genes and similar cells using a two-side sparse self-representation model. We demonstrate that scTSSR can effectively capture the Gini coefficients of genes and gene-to-gene correlations observed in single-molecule RNA fluorescence in situ hybridization (smRNA FISH). Down-sampling experiments indicate that scTSSR performs better than existing methods in recovering the true gene expression levels. We also show that scTSSR has a competitive performance in differential expression analysis, cell clustering and cell trajectory inference.The R package is available at https://github.com/Zhangxf-ccnu/scTSSR.Supplementary data are available at Bioinformatics online.}",
+    issn = {1367-4803},
+    doi = {10.1093/bioinformatics/btaa108},
+    url = {https://doi.org/10.1093/bioinformatics/btaa108},
+    eprint = {https://academic.oup.com/bioinformatics/article-pdf/36/10/3131/33204347/btaa108.pdf},
+}
+%sctssr2
+@article{li2022sctssr2,
+  title={scTSSR2: imputing dropout events for single-cell RNA sequencing using fast two-side self-representation},
+  author={Li, Bo and Jin, Ke and Ou-Yang, Le and Yan, Hong and Zhang, Xiao-Fei},
+  journal={IEEE/ACM Transactions on Computational Biology and Bioinformatics},
+  year={2022},
+  publisher={IEEE}
+}
+%viper
+@article{chen2018viper,
+  title={VIPER: variability-preserving imputation for accurate gene expression recovery in single-cell RNA sequencing studies},
+  author={Chen, Mengjie and Zhou, Xiang},
+  journal={Genome biology},
+  volume={19},
+  number={1},
+  pages={1--15},
+  year={2018},
+  publisher={BioMed Central}
+}
+%sdimpute
+@article{10.1371/journal.pcbi.1009118,
+    doi = {10.1371/journal.pcbi.1009118},
+    author = {Qi, Jing AND Zhou, Yang AND Zhao, Zicen AND Jin, Shuilin},
+    journal = {PLOS Computational Biology},
+    publisher = {Public Library of Science},
+    title = {SDImpute: A statistical block imputation method based on cell-level and gene-level information for dropouts in single-cell RNA-seq data},
+    year = {2021},
+    month = {06},
+    volume = {17},
+    url = {https://doi.org/10.1371/journal.pcbi.1009118},
+    pages = {1-20},
+    abstract = {The single-cell RNA sequencing (scRNA-seq) technologies obtain gene expression at single-cell resolution and provide a tool for exploring cell heterogeneity and cell types. As the low amount of extracted mRNA copies per cell, scRNA-seq data exhibit a large number of dropouts, which hinders the downstream analysis of the scRNA-seq data. We propose a statistical method, SDImpute (Single-cell RNA-seq Dropout Imputation), to implement block imputation for dropout events in scRNA-seq data. SDImpute automatically identifies the dropout events based on the gene expression levels and the variations of gene expression across similar cells and similar genes, and it implements block imputation for dropouts by utilizing gene expression unaffected by dropouts from similar cells. In the experiments, the results of the simulated datasets and real datasets suggest that SDImpute is an effective tool to recover the data and preserve the heterogeneity of gene expression across cells. Compared with the state-of-the-art imputation methods, SDImpute improves the accuracy of the downstream analysis including clustering, visualization, and differential expression analysis.},
+    number = {6},
+
+}
+%zinbwave
+@article {Risso125112,
+	author = {Risso, Davide and Perraudeau, Fanny and Gribkova, Svetlana and Dudoit, Sandrine and Vert, Jean-Philippe},
+	title = {ZINB-WaVE: A general and flexible method for signal extraction from single-cell RNA-seq data},
+	elocation-id = {125112},
+	year = {2017},
+	doi = {10.1101/125112},
+	publisher = {Cold Spring Harbor Laboratory},
+	abstract = {Single-cell RNA sequencing (scRNA-seq) is a powerful high-throughput technique that enables researchers to measure genome-wide transcription levels at the resolution of single cells. Because of the low amount of RNA present in a single cell, some genes may fail to be detected even though they are expressed; these genes are usually referred to as dropouts. Here, we present a general and flexible zero-inflated negative binomial model (ZINB-WaVE), which leads to low-dimensional representations of the data that account for zero inflation (dropouts), over-dispersion, and the count nature of the data. We demonstrate, with simulated and real data, that the model and its associated estimation procedure are able to give a more stable and accurate low-dimensional representation of the data than principal component analysis (PCA) and zero-inflated factor analysis (ZIFA), without the need for a preliminary normalization step.},
+	URL = {https://www.biorxiv.org/content/early/2017/11/02/125112},
+	eprint = {https://www.biorxiv.org/content/early/2017/11/02/125112.full.pdf},
+	journal = {bioRxiv}
+}
+
+%enimpute
+@article{10.1093/bioinformatics/btz435,
+    author = {Zhang, Xiao-Fei and Ou-Yang, Le and Yang, Shuo and Zhao, Xing-Ming and Hu, Xiaohua and Yan, Hong},
+    title = "{EnImpute: imputing dropout events in single-cell RNA-sequencing data via ensemble learning}",
+    journal = {Bioinformatics},
+    volume = {35},
+    number = {22},
+    pages = {4827-4829},
+    year = {2019},
+    month = {05},
+    abstract = "{Imputation of dropout events that may mislead downstream analyses is a key step in analyzing single-cell RNA-sequencing (scRNA-seq) data. We develop EnImpute, an R package that introduces an ensemble learning method for imputing dropout events in scRNA-seq data. EnImpute combines the results obtained from multiple imputation methods to generate a more accurate result. A Shiny application is developed to provide easier implementation and visualization. Experiment results show that EnImpute outperforms the individual state-of-the-art methods in almost all situations. EnImpute is useful for correcting the noisy scRNA-seq data before performing downstream analysis.The R package and Shiny application are available through Github at https://github.com/Zhangxf-ccnu/EnImpute.Supplementary data are available at Bioinformatics online.}",
+    issn = {1367-4803},
+    doi = {10.1093/bioinformatics/btz435},
+    url = {https://doi.org/10.1093/bioinformatics/btz435},
+    eprint = {https://academic.oup.com/bioinformatics/article-pdf/35/22/4827/30706681/btz435.pdf},
+}
+%bcp
+@article{wang2018bayesian,
+  title={Bayesian analysis of change point problems},
+  author={Wang, X and Erdman, C and Emerson, JW},
+  journal={R-CRAN Package, r-project. org. Available at: https://cran. r-project. org/web/packages/bcp/bcp. pdf},
+  year={2018}
+}
+
+@Article{Satija2015Spatial,
+  author  = {Rahul Satija and others},
+  title   = {Spatial reconstruction of single-cell gene expression data},
+  journal = {Nat. Biotechnol.},
+  year    = {2015},
+  volume  = {33},
+  number  = {5},
+  pages    = {495--502},
+}
+%baron
+@article{baron2016single,
+  title={A single-cell transcriptomic map of the human and mouse pancreas reveals inter-and intra-cell population structure},
+  author={Baron, Maayan and Veres, Adrian and Wolock, Samuel L and Faust, Aubrey L and Gaujoux, Renaud and Vetere, Amedeo and Ryu, Jennifer Hyoje and Wagner, Bridget K and Shen-Orr, Shai S and Klein, Allon M and others},
+  journal={Cell systems},
+  volume={3},
+  number={4},
+  pages={346--360},
+  year={2016},
+  publisher={Elsevier}
+}
+%scmoo
+@article{jin2022imputing,
+  title={Imputing dropouts for single-cell RNA sequencing based on multi-objective optimization},
+  author={Jin, Ke and Li, Bo and Yan, Hong and Zhang, Xiao-Fei},
+  journal={Bioinformatics},
+  year={2022}
+}
+
+
+
+%zeisel
+@Article{zeisel2015cell,
+  author  = {Zeisel, Amit and others},
+  title   = {Cell types in the mouse cortex and hippocampus revealed by single-cell RNA-seq},
+  journal = {Science},
+  year    = {2015},
+  volume  = {347},
+  number  = {6226},
+  pages   = {1138--1142},
+}
+%seg
+@article{zheng2017massively,
+  title={Massively parallel digital transcriptional profiling of single cells},
+  author={Zheng, Grace XY and Terry, Jessica M and Belgrader, Phillip and Ryvkin, Paul and Bent, Zachary W and Wilson, Ryan and Ziraldo, Solongo B and Wheeler, Tobias D and McDermott, Geoff P and Zhu, Junjie and others},
+  journal={Nature communications},
+  volume={8},
+  number={1},
+  pages={1--12},
+  year={2017},
+  publisher={Nature Publishing Group}
+}
+
+
+@article{zhang2018comparison,
+  title={Comparison of computational methods for imputing single-cell RNA-sequencing data},
+  author={Zhang, Lihua and Zhang, Shihua},
+  journal={IEEE/ACM Trans Comput Biol Bioinform},
+  year={2018},
+  publisher={IEEE}
+}
+
+%shiny
+@Book{Chang2017Web,
+  title     = {Web Application Framework for R},
+  publisher = {Spell Press},
+  year      = {2017},
+  author    = {Chang, Winston and others},
+  pages     = {471-9},
+}
+
+@Comment{jabref-meta: databaseType:bibtex;}
