@@ -1,2 +1,173 @@
 # EnImpute2
-This repository contains R package and shiny code for supporting tha essay "EnImpute2:A shiny interface for implementing an effective ensemble imputation method for dropout events"
+README file for R package supporting the paper **"EnImpute2:A shiny
+interface for implementing an effective ensemble imputation method for
+dropout events"**.
+
+# Contents of this archive
+
+(1) pkg: subdirectory that contains the R package.
+(2) shiny: subdirectory that contains the Shiny application.
+(3) EnImpute2-manual.pdf: reference manual.
+
+The EnImpute2 package has the following R-package dependencies:
+DrImpute, Rmagic, rsvd, SAVER, scImpute,
+scRMD,WGCNA,scNPF,SCRABBLE,scTSSR,scTSSR2,SDImpute,VIPER and zinbwave.
+The dependencies will be automatically installed along with EnImpute2.
+If the dependencies are not installed correctly, please install them by
+yourself. You can install the dependencies using the following commands:
+
+## DrImpute
+
+```{r eval=FALSE}
+install.packages("DrImpute")
+```
+
+## Rmagic
+
+```{r eval=FALSE}
+install.packages("Rmagic")
+```
+
+## rsvd
+
+```{r eval=FALSE}
+install.packages("rsvd")
+```
+
+## SAVER
+
+```{r eval=FALSE}
+library(devtools) 
+devtools::install_github("mohuangx/SAVER")
+```
+
+## scImpute
+
+```{r eval=FALSE}
+library(devtools) 
+install_github("Vivianstats/scImpute")
+```
+
+## scRMD
+
+```{r eval=FALSE}
+library(devtools) 
+devtools::install_github("ChongC1990/scRMD")
+```
+
+## WGCNA
+
+```{r eval=FALSE}
+install.packages("WGCNA")
+```
+
+or
+
+```{r eval=FALSE}
+install.packages("BiocManager") 
+BiocManager::install("WGCNA")
+```
+
+or
+
+```{r eval=FALSE}
+install.packages("devtools")
+library(devtools)
+install_github("cran/WGCNA")
+```
+
+## scNPF
+
+```{r eval=FALSE}
+install.packages("devtools")
+library(devtools)
+install_github("BMILAB/scNPF")
+library(scNPF)
+```
+
+## SCRABBLE
+
+```{r eval=FALSE}
+install.packages("SCRABBLE")
+```
+
+## scTSSR
+
+```{r eval=FALSE}
+install.packages("devtools")
+library("devtools")
+install_github("Zhangxf-ccnu/scTSSR")
+```
+
+## scTSSR2
+
+```{r eval=FALSE}
+install.packages("devtools")
+library("devtools")
+install_github("Zhangxf-ccnu/scTSSR2")
+```
+
+## SDImpute
+
+```{r eval=FALSE}
+install.packages("devtools")         
+library(devtools)           
+install_github("Jinsl-lab/SDImpute")
+```
+
+## VIPER
+
+```{r eval=FALSE}
+install.packages("devtools")
+library(devtools)
+install_github("ChenMengjie/VIPER")
+```
+
+## zinbwave
+
+```{r eval=FALSE}
+install.packages("remotes")
+remotes::install_github("drisso/zinbwave")
+```
+
+## bcp
+
+```{r eval=FALSE}
+install.packages("bcp")
+```
+
+EnImpute2 also depends on the following two Python packages: dca
+(<https://github.com/theislab/dca>),MAGIC
+(<https://github.com/KrishnaswamyLab/MAGIC>). Before installing
+EnImpute2, please install the two Python packages following the
+corresponding readme files, and check whether they can be run from the
+command line.
+
+You can use the following commands to install EnImpute2 from GitHub.
+
+# Step 1. Install the devtools package. Invoke R and then type
+
+install.packages("devtools")
+
+# Step 2. Load the devtools package.
+
+library("devtools")
+
+# Step 3. Install the EnImpute package from GitHub.
+
+install_github("leoluo12138/EnImpute2", subdir="pkg")
+
+# Quick Start
+
+To perform imputation, simply run:
+
+```{r eval=FALSE}
+library("EnImpute2")
+data("baron")
+baron_imputation_result = EnImpute2(baron$count.samp)
+```
+
+Please do not hesitate to contact Yu-Heng Luo at
+[luoyuheng\@mails.ccnu.edu.cn](mailto:luoyuheng@mails.ccnu.edu.cn){.email}
+to seek any clarifications regarding any contents or operation of the
+archive.
