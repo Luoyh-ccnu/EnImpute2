@@ -1,0 +1,70 @@
+---
+title: "EnImpute2-tutorial"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{EnImpute2-tutorial}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>"
+)
+```
+
+## 1.Installation
+
+\# Step 1. Install the devtools package. Invoke R and then type
+
+```{r setup, eval=FALSE}
+install.packages("devtools")
+```
+
+\# Step 2. Load the devtools package.
+
+```{r setup, eval=FALSE}
+library("devtools")
+```
+
+\# Step 3. Install the EnImpute package from GitHub.
+
+```{r setup, eval=FALSE}
+install_github("leoluo12138/EnImpute2", subdir="pkg")
+```
+
+\# Step 4. Library the package to see if you have install the package successfully.
+
+```{r setup, eval=FALSE}
+library(EnImpute2)
+```
+
+## 2.Quick Start
+
+To perform imputation, simply run:
+
+```{r scmoo, eval=FALSE}
+library(EnImpute2)
+data(baron)
+result <- EnImpute2(baron$count.samp,scale.factor = 10000,
+  trim = 0.3,
+  threshold = 0.7,
+  ALRA = TRUE,
+  DCA = TRUE,
+  DrImpute = TRUE,
+  knn_smooth = TRUE,
+  MAGIC = TRUE,
+  SAVER = TRUE,
+  scImpute = TRUE,
+  scNPF = TRUE,
+  SCRABBLE = TRUE,
+  scRMD = TRUE,
+  scTSSR = TRUE,
+  scTSSR2 = TRUE,
+  SDImpute = TRUE,
+  VIPER = TRUE,
+  zinbwave = TRUE)
+```
+
+Here we use Baron dataset used in the Recovery analysis as an example. The count parameter is passed as an expression matrix with genes as rows and cells as columns,scale.factor is the library size for each cell during the library normalization step.Parameter trim is for the trimmed mean step and the parameter threshold is an input for the function bcp for change point detection.The rest parameters are to decide whether to ensemble with the corresponding method.For example,"ALRA=TRUE" means EnImpute2 will take account of the imputation matrix when ensemble,meanings of the rest of the parameters are similar.

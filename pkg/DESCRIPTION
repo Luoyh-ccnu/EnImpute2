@@ -1,0 +1,24 @@
+Package: EnImpute2
+Type: Package
+Title: A shiny interface for implementing an effective ensemble imputation method for dropout events
+Version: 1.0.0
+Author: Yu-Heng Luo
+Maintainer: Yu-Heng Luo <luoyuheng@mails.ccnu.edu.cn>
+Description: EnImpute2 is an ensemble learning-based method for imputing dropout values in scRNA-seq data which is a refinement of EnImpute which integrates fifteen state-of-the-art methods: ALRA,DCA, DrImpute,knn_smooth, MAGIC,SAVER, scImpute, scNPF,SCRABBLE,scRMD,scTSSR,scTSSR2,SDImpute,VIPER and zinbwave.
+Config/reticulate:
+  list(
+    packages = list(
+      list(package = "scipy", version = "1.3.0", pip = TRUE)
+    )
+  )
+License: GPL (>= 2)
+Encoding: UTF-8
+LazyData: true
+RoxygenNote: 7.1.2
+Depends: R (>= 4.1)
+Imports: DrImpute, Rmagic, SAVER, scImpute, WGCNA,scNPF,SCRABBLE,scRMD,scTSSR,scTSSR2,SDImpute,VIPER,zinbwave,rsvd,bcp,reticulate
+NeedsCompilation: no
+Suggests: 
+    knitr,
+    rmarkdown
+VignetteBuilder: knitr
